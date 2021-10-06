@@ -1,0 +1,304 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  background: url(background.jpg) no-repeat center center/cover;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 40px 80px 250px #000, inset 40px 80px 250px #000;
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+
+.showcase-top img {
+  width: 170px;
+  height: 40px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 11rem;
+}
+
+.showcase-content h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0 0 1.2rem;
+}
+
+.showcase-content h3 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+}
+
+.showcase-content p {
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 1;
+  margin: 0 0 2rem;
+}
+
+.address {
+  width: 600px;
+  height: 75px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+header {
+  border-bottom: 8px solid #3d3d3d;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8px solid #3d3d3d;
+  padding: 0 1rem;
+}
+
+.pic {
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+}
+
+.pic-2 {
+  width: 600px;
+}
+
+.content {
+  margin: 8rem;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.tabs p {
+  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin: 0 0 2rem;
+}
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.btn {
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  justify-content: center;
+}
+
+.btn.hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+#button {
+  width: 250px;
+  height: 75px;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .showcase {
+    height: 90vh;
+  }
+
+  .showcase-content {
+    margin-top: 7rem;
+  }
+
+  .showcase-content h1 {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+
+  .address {
+    width: 500px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  .mail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #button {
+    width: 160px;
+    height: 60px;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  .tab-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    margin: 0;
+  }
+  .content h2 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .content p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .pic {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+  }
+
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
